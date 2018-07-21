@@ -208,11 +208,11 @@ public class Topic implements Destination {
     return this.destination.equals(address);
   }
 
-  protected static class Subscription {
-    final StompServerConnection connection;
-    final String id;
-    final String ackMode;
-    final String destination;
+  public static class Subscription {
+    public final StompServerConnection connection;
+    public final String id;
+    public final String ackMode;
+    public final String destination;
 
     protected Subscription(StompServerConnection connection, Frame frame) {
       this.connection = connection;

@@ -179,6 +179,15 @@ public class Topic implements Destination {
   }
 
   /**
+   * Gets all subscriptions
+   *
+   * @return the list of all subscriptions
+   */
+  public synchronized List<Subscription> getSubscriptions() {
+    return subscriptions;
+  }
+
+  /**
    * Gets the number of subscriptions attached to the current {@link Destination}.
    *
    * @return the number of subscriptions.

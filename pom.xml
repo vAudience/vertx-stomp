@@ -6,6 +6,7 @@
     <groupId>io.vertx</groupId>
     <artifactId>vertx-ext-parent</artifactId>
     <version>28</version>
+    <relativePath/>
   </parent>
 
   <artifactId>vertx-stomp</artifactId>
